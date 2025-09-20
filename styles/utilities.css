@@ -33,12 +33,20 @@
   display: flex;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .grid {
   display: grid;
 }
 
 .gap-1 {
   gap: 1.6rem;
+}
+
+.gap-2 {
+  gap: 2.4rem;
 }
 
 @media (min-width: 80em) {

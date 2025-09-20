@@ -83,7 +83,7 @@ a {
   color: inherit;
 }
 
-a:not(.social):hover {
+a.default:hover {
   background: var(--brand-gradient);
   -webkit-background-clip: text;
   background-clip: text;
