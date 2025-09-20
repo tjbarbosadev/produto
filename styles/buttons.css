@@ -1,0 +1,70 @@
+.btn {
+  border: 0;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 0.8rem;
+  cursor: pointer;
+
+  font: var(--fw-md) var(--fs-p) / 2.4 var(--ff-sans);
+
+  &:hover {
+    background-image: var(--brand-gradient);
+  }
+}
+
+.btn-primary {
+  background: var(--text-color-primary);
+  color: var(--bg-color);
+}
+
+.btn-sm {
+  padding: 0.8rem 1.6rem;
+  font-size: var(--fs-span);
+}
+
+.btn-md {
+  font-size: var(--fs-p);
+  padding: 1.2rem 2.4rem;
+}
+
+.btn-lg {
+  font-size: var(--fs-md);
+  padding: 1.6rem 3.2rem;
+}
+
+.btn-secondary[aria-label] {
+  position: relative;
+  background: var(--text-color-primary);
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    inset: 0.15rem;
+    background-color: var(--bg-color);
+  }
+  &::after {
+    content: attr(aria-label);
+    background: var(--text-color-primary);
+    --webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    z-index: 1;
+  }
+
+  &:hover {
+    background: var(--brand-gradient);
+
+    &::after {
+      background: var(--brand-gradient);
+      --webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+  }
+}

@@ -29,6 +29,18 @@
   gap: 1.6rem;
 }
 
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.gap-1 {
+  gap: 1.6rem;
+}
+
 @media (min-width: 80em) {
   .container {
     --max-width: 124rem;

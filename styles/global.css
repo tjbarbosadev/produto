@@ -24,8 +24,8 @@
   --brand-color-secondary: #fc4a1a;
   --brand-gradient: linear-gradient(
     90deg,
-    var(--brand-color-primary) 0%,
-    var(--brand-color-secondary) 100%
+    var(--brand-color-secondary) 0%,
+    var(--brand-color-primary) 100%
   );
 
   /* typography */
@@ -37,6 +37,7 @@
   --fs-h1: 4rem;
   --fs-h2: 2.4rem;
   --fs-h3: 2rem;
+  --fs-md: 1.8rem;
   --fs-p: 1.6rem;
   --fs-span: 1.4rem;
 
