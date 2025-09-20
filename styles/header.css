@@ -1,0 +1,10 @@
+header {
+  a {
+    font: var(--fw-md) var(--fs-p) / 1.5 var(--ff-sans);
+    color: var(--text-color-secondary);
+  }
+
+  a:first-child {
+    margin-right: auto;
+  }
+}
