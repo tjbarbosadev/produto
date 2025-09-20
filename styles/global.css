@@ -39,6 +39,11 @@
   --fs-h3: 2rem;
   --fs-p: 1.6rem;
   --fs-span: 1.4rem;
+
+  --py-base: 1.6rem;
+  --py-lg: 2.4rem;
+  --py-xl: 4.8rem;
+  --px-lg: 2.4rem;
 }
 
 html {
@@ -86,5 +91,10 @@ ul[role="list"] {
     --fs-h1: 6.4rem;
     --fs-h2: 4.8rem;
     --fs-h3: 3.2rem;
+
+    --py-base: 2.4rem;
+    --py-lg: 4rem;
+    --py-xl: 8rem;
+    --px-lg: 3.2rem;
   }
 }
