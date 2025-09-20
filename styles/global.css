@@ -83,6 +83,13 @@ a {
   color: inherit;
 }
 
+a:not(.social):hover {
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 ul[role="list"] {
   list-style: none;
 }
