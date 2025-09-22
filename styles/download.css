@@ -1,0 +1,39 @@
+#download {
+  .wrapper {
+    background-color: var(--surface-color);
+    border-radius: 2.4rem;
+    padding: 4.8rem 2.4rem 24rem;
+    position: relative;
+  }
+
+  .buttons {
+    display: grid;
+    max-width: 17.8rem;
+    margin-top: 3.2rem;
+    gap: 1.5rem;
+  }
+
+  img.illustration {
+    position: absolute;
+    display: grid;
+    bottom: 0;
+    right: -4rem;
+    width: 23.8rem;
+  }
+
+  @media (min-width: 80em) {
+    .wrapper {
+      padding: 14rem 49.6rem 23.6rem 8rem;
+    }
+
+    .buttons {
+      max-width: 35.3rem;
+      margin-top: 4rem;
+      display: flex;
+    }
+
+    img.illustration {
+      width: 46.6rem;
+    }
+  }
+}
