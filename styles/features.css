@@ -9,7 +9,7 @@
   }
 
   .card {
-    > div {
+    &:has(.desktop-only) > div {
       max-width: 50%;
     }
   }
