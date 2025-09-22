@@ -1,0 +1,117 @@
+#pricing {
+  header {
+    text-align: center;
+    margin-bottom: 3.2rem;
+  }
+
+  .card {
+    h3 {
+      margin-top: 0;
+      margin-bottom: 0.4rem;
+    }
+
+    zen-pricing {
+      font: var(--fw-bold) 3.2rem/1.2 var(--ff-sans);
+      margin-block: var(--py-lg);
+      display: block;
+
+      span {
+        font: var(--fw-base) 1.6rem/1.25 var(--ff-sans);
+        color: var(--text-color-secondary);
+      }
+    }
+
+    button {
+      width: 100%;
+      &::before {
+        background-color: var(--surface-color);
+      }
+    }
+
+    .separator {
+      height: 1px;
+      background: radial-gradient(
+        var(--text-color-secondary),
+        var(--surface-color) 70%
+      );
+      margin-block: 3.2rem;
+    }
+
+    ul {
+      li {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 0.8rem;
+
+        img {
+          width: 2.4rem;
+        }
+
+        span {
+          font: var(--fw-base) var(--fs-p) / 1.5 var(--ff-sans);
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 1.6rem;
+        }
+      }
+
+      + small {
+        margin-top: 2.4rem;
+        color: var(--text-color-secondary);
+        font-size: 1.4rem;
+        line-height: 1.4;
+        display: block;
+      }
+    }
+
+    &[aria-label] {
+      border: unset;
+      padding-top: 7.2rem;
+      position: relative;
+      background: var(--brand-gradient);
+
+      @media (min-width: 80em) {
+        padding-block: 7.2rem 9.6rem;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0.1rem;
+        background: var(--surface-color); /* ← Fundo do card */
+        border-radius: inherit;
+      }
+
+      > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      &::after {
+        content: attr(aria-label);
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--brand-gradient);
+        padding: 1.2rem 3.2rem;
+        color: var(--bg-color);
+        font: var(--fw-md) 1.2rem/1.6 var(--ff-sans);
+        text-transform: uppercase;
+        letter-spacing: 8%;
+        border-radius: 0 0 2.4rem 0;
+        z-index: 3;
+      }
+    }
+
+    @media (min-width: 80em) {
+      &:has(small) {
+        .separator {
+          margin-block: 2.4rem;
+        }
+      }
+    }
+  }
+}
