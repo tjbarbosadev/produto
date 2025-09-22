@@ -105,8 +105,15 @@
         z-index: 3;
       }
     }
+  }
 
-    @media (min-width: 80em) {
+  @media (min-width: 80em) {
+    h2 {
+      max-width: 80rem;
+      margin-inline: auto;
+    }
+
+    .card {
       &:has(small) {
         .separator {
           margin-block: 2.4rem;
