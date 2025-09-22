@@ -52,6 +52,7 @@ html {
   font-family: var(--ff-sans);
   font-weight: var(--fw-base);
   color: var(--text-color-primary);
+  scroll-behavior: smooth;
 }
 
 body {

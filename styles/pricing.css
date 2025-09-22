@@ -100,7 +100,7 @@
         color: var(--bg-color);
         font: var(--fw-md) 1.2rem/1.6 var(--ff-sans);
         text-transform: uppercase;
-        letter-spacing: 8%;
+        letter-spacing: 0.08em;
         border-radius: 0 0 2.4rem 0;
         z-index: 3;
       }
